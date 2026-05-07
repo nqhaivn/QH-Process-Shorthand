@@ -5,7 +5,7 @@
 
 Trong môi trường làm việc hiện đại, quy trình là xương sống của mọi tổ chức. Tuy nhiên, việc mô tả quy trình thường đối mặt với một nghịch lý: viết quá chi tiết thì dài dòng, khó đọc; viết quá ngắn gọn thì thiếu chính xác, khó hiểu.
 
-Ngôn ngữ tốc ký quy trình QH (TKQH) ra đời để giải quyết nghịch lý này.
+Ngôn ngữ Tốc ký Quy trình QH (TKQH) ra đời để giải quyết nghịch lý này.
 
 TKQH là một Domain-Specific Language (DSL) - ngôn ngữ chuyên biệt cho lĩnh vực mô tả quy trình. Lấy cảm hứng từ các ký hiệu chuẩn ISO 5807 nhưng được tối giản hóa triệt để, cho phép bất kỳ ai cũng có thể viết một quy trình hoàn chỉnh trong vài phút bằng giấy bút hoặc gõ văn bản, đồng thời đọc và hiểu luồng quy trình ngay lập tức.
 
