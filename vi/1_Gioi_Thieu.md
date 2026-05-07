@@ -222,18 +222,18 @@ TKQH không phải là ngôn ngữ lập trình khô khan, cũng không phải v
 | **Ký hiệu** | **Ý nghĩa** | **Lý do chọn** | **Hình vẽ trên sơ đồ** |
 | --- | --- | --- | --- |
 | **`@`** | Khai báo vai trò | Ký hiệu của Địa chỉ (Address) được dùng trong các email, ký hiệu gắn thẻ/nhắc đến trên mạng xã hội. Dễ nhận ra là "ai đó" | |
-| | Tác vụ | Đây là thành phần được sử dụng nhiều nhất, do đó không có ký hiệu để tiện lợi cho người viết quy trình. | |
-| **`?`** | Quyết định hoặc rẽ nhánh | Dấu hỏi gợi ngay câu hỏi cần trả lời. Rất trực quan, ai cũng hiểu | |
-| **`/`** | Ngõ vào hoặc ngõ ra (dữ liệu) | Gợi ý về sự phân chia giữa vào và ra. Một cạnh của hình bình hành | |
-| **`!`** | Quy trình con | Gợi ý về sự khẳng định, đứng vững. Đồng thời liên tưởng đến hình chữ nhật có hai nét kẻ dọc, hình vẽ dành riêng cho Quy trình con | |
-| **`->`** | Đường luồng hay mũi tên | Tượng trưng trực quan cho hướng đi tiếp theo. Ai cũng hiểu là "đi tiếp" | |
-| **`./`** | Kết thúc quy trình | Hai ký tự cuối cùng trên bàn phím. Mang ý nghĩa "chấm dứt", "kết thúc" | |
-| **`\.`** | Bắt đầu quy trình | Ngược lại với kết thúc. Mở đầu cho quy trình | |
-| **`'...'`** | Nhãn của đường luồng | Dấu nháy đơn, gợi ý rằng nhãn được "gắn lên phía trên" đường luồng. Dễ phân biệt với mô tả thông thường | |
-| **`~...~`** | Ghi chú (không ảnh hưởng luồng) | Gợi hình ảnh "lời thì thầm" nằm bên ngoài luồng chính | |
+| | Tác vụ | Đây là thành phần được sử dụng nhiều nhất, do đó không có ký hiệu để tiện lợi cho người viết quy trình. | ![](../svg/process.svg) |
+| **`?`** | Quyết định hoặc rẽ nhánh | Dấu hỏi gợi ngay câu hỏi cần trả lời. Rất trực quan, ai cũng hiểu | ![](../svg/decision.svg) |
+| **`/`** | Ngõ vào hoặc ngõ ra (dữ liệu) | Gợi ý về sự phân chia giữa vào và ra. Một cạnh của hình bình hành | ![](../svg/in_out.svg) |
+| **`!`** | Quy trình con | Gợi ý về sự khẳng định, đứng vững. Đồng thời liên tưởng đến hình chữ nhật có hai nét kẻ dọc, hình vẽ dành riêng cho Quy trình con | ![](../svg/process_child.svg) |
+| **`->`** | Đường luồng hay mũi tên | Tượng trưng trực quan cho hướng đi tiếp theo. Ai cũng hiểu là "đi tiếp" | ![](../svg/flowline.svg) |
+| **`./`** | Kết thúc quy trình | Hai ký tự cuối cùng trên bàn phím. Mang ý nghĩa "chấm dứt", "kết thúc" | ![](../svg/start_end.svg) |
+| **`\.`** | Bắt đầu quy trình | Ngược lại với kết thúc. Mở đầu cho quy trình | ![](../svg/start_end.svg) |
+| **`'...'`** | Nhãn của đường luồng | Dấu nháy đơn, gợi ý rằng nhãn được "gắn lên phía trên" đường luồng. Dễ phân biệt với mô tả thông thường | ![](../svg/flowline_label.svg) |
+| **`~...~`** | Ghi chú (không ảnh hưởng luồng) | Gợi hình ảnh "lời thì thầm" nằm bên ngoài luồng chính | ![](../svg/annotation.svg) |
 | **`"..."`** | Mô tả nhiều dòng hoặc bọc nội dung chứa ký tự đặc biệt | Dấu nháy kép (") thường được dùng để trích dẫn trong các văn bản | |
-| **`()`** | Điểm nối trên cùng trang | Hình tròn gợi ý về Điểm thu và Điểm phát trên cùng một trang sơ đồ | |
-| **`\/`** | Cổng nối sang trang khác | Hai cạnh dưới của hình ngũ giác ngược. Dùng khi cần chuyển sang trang sơ đồ khác | |
+| **`()`** | Điểm nối trên cùng trang | Hình tròn gợi ý về Điểm thu và Điểm phát trên cùng một trang sơ đồ | ![](../svg/conector.svg) |
+| **`\/`** | Cổng nối sang trang khác | Hai cạnh dưới của hình ngũ giác ngược. Dùng khi cần chuyển sang trang sơ đồ khác | ![](../svg/off_connector.svg) |
 
 ### B.5 Những vấn đề đã giải quyết
 
