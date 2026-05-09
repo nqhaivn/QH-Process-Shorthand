@@ -5,11 +5,11 @@
 
 Trong môi trường làm việc hiện đại, quy trình là xương sống của mọi tổ chức. Tuy nhiên, việc mô tả quy trình thường đối mặt với một nghịch lý: viết quá chi tiết thì dài dòng, khó đọc; viết quá ngắn gọn thì thiếu chính xác, khó hiểu.
 
-Ngôn ngữ Tốc ký Quy trình QH (TKQH) ra đời để giải quyết nghịch lý này.
+**Ngôn ngữ Tốc ký Quy trình QH** (QH Process Shorthand, hay QHPS) ra đời để giải quyết nghịch lý này.
 
-TKQH là một Domain-Specific Language (DSL) - ngôn ngữ chuyên biệt cho lĩnh vực mô tả quy trình. Lấy cảm hứng từ các ký hiệu chuẩn ISO 5807 nhưng được tối giản hóa triệt để, cho phép bất kỳ ai cũng có thể viết một quy trình hoàn chỉnh trong vài phút bằng giấy bút hoặc gõ văn bản, đồng thời đọc và hiểu luồng quy trình ngay lập tức.
+QHPS là một Domain-Specific Language (DSL) - ngôn ngữ chuyên biệt cho lĩnh vực mô tả quy trình. Lấy cảm hứng từ các ký hiệu chuẩn ISO 5807 nhưng được tối giản hóa triệt để, cho phép bất kỳ ai cũng có thể viết một quy trình hoàn chỉnh trong vài phút bằng giấy bút hoặc gõ văn bản, đồng thời đọc và hiểu luồng quy trình ngay lập tức.
 
-TKQH không nhằm thay thế BPMN 2.0 hay các chuẩn quy trình chuyên nghiệp khác, mà là một lựa chọn nhẹ, dễ học hơn, phù hợp với nhịp độ làm việc hàng ngày, đặc biệt khi bạn cần ghi lại quy trình nhanh mà không muốn xử lý quá nhiều ký hiệu phức tạp.
+QHPS không nhằm thay thế BPMN 2.0 hay các chuẩn quy trình chuyên nghiệp khác, mà là một lựa chọn nhẹ, dễ học hơn, phù hợp với nhịp độ làm việc hàng ngày, đặc biệt khi bạn cần ghi lại quy trình nhanh mà không muốn xử lý quá nhiều ký hiệu phức tạp.
 
 ## PHẦN A - TỔNG QUAN
 
@@ -25,7 +25,7 @@ Qua khảo sát thực tế trên nhiều quy trình, tác giả nhận thấy c
 
 **Thứ tư,** không có ngôn ngữ trung gian nào đủ linh hoạt để vừa dễ viết, vừa dễ đọc, vừa dễ chuyển đổi sang các định dạng khác như sơ đồ.
 
-TKQH được xây dựng để lấp đầy khoảng trống đó.
+QHPS được xây dựng để lấp đầy khoảng trống đó.
 
 ### A.2 Mục tiêu của ngôn ngữ
 
@@ -55,7 +55,7 @@ Ngôn ngữ này hướng đến năm mục tiêu chính.
 
 **Phù hợp:**
 
-TKQH phù hợp với các quy trình nghiệp vụ nội bộ như hành chính, nhân sự, kế toán, kinh doanh. Quy trình vận hành như xử lý đơn hàng, chăm sóc khách hàng, sản xuất đơn giản. Quy trình kiểm soát, phê duyệt và quy trình đào tạo, hướng dẫn nghiệp vụ.
+QHPS phù hợp với các quy trình nghiệp vụ nội bộ như hành chính, nhân sự, kế toán, kinh doanh. Quy trình vận hành như xử lý đơn hàng, chăm sóc khách hàng, sản xuất đơn giản. Quy trình kiểm soát, phê duyệt và quy trình đào tạo, hướng dẫn nghiệp vụ.
 
 **Không phù hợp:**
 
@@ -65,7 +65,7 @@ Ngôn ngữ này không phù hợp với quy trình kỹ thuật yêu cầu ký 
 
 ### B.1 So sánh với các phương pháp khác
 
-| **Tiêu chí**        | **Văn bản tự do**  | **Flowchart tay** | **BPMN 2.0**   | **Ngôn ngữ sơ đồ khác** | **Ngôn ngữ TKQH**  |
+| **Tiêu chí**        | **Văn bản tự do**  | **Flowchart tay** | **BPMN 2.0**   | **Ngôn ngữ sơ đồ khác** | **Ngôn ngữ QHPS**  |
 |----------       |--------------- |---------------|----------  |--------    |---------------- |
 | **Thời gian viết (10 bước)**    | 20 phút    | 45 phút    | 60 phút    | 15 phút     | 5 phút    |
 | **Thời gian đọc (nắm luồng)**   | 3-5 phút    | 30 giây    | 1-2 phút   | 2 phút     | 30 giây    |
@@ -79,7 +79,7 @@ Ghi chú: Parse là khả năng máy tính đọc hiểu cấu trúc của văn 
 
 ### B.2 Ví dụ cụ thể: từ cách viết đến kết quả
 
-Để dễ hình dung, hãy so sánh một quy trình thực tế: "Xử lý đơn nghỉ phép của nhân viên". Được viết bằng hai ngôn ngữ cho sơ đồ nổi tiếng nhất và nhiều người sử dụng nhất hiện nay là Mermaid và PlantUML với TKQH.
+Để dễ hình dung, hãy so sánh một quy trình thực tế: "Xử lý đơn nghỉ phép của nhân viên". Được viết bằng hai ngôn ngữ cho sơ đồ nổi tiếng nhất và nhiều người sử dụng nhất hiện nay là Mermaid và PlantUML với QHPS.
 
 **B.2.1 Quy trình được viết bằng Mermaid**
 
@@ -127,7 +127,7 @@ endif
 @enduml
 ```
 
-**B.2.3 Quy trình được viết bằng TKQH**
+**B.2.3 Quy trình được viết bằng QHPS**
 
 ```
 @1 Nhân viên (NV)
@@ -181,13 +181,13 @@ endif
                                                 └─────────────┘
 ```
 
-**B.2.5 Nhận xét nhanh về TKQH từ ví dụ**
+**B.2.5 Nhận xét nhanh về QHPS từ ví dụ**
 
 - Ngắn hơn các phương pháp khác.
 - Văn bản “sạch” hơn, gần gũi với ngôn ngữ tự nhiên.
 - Người đọc chỉ mất 15 giây để nắm luồng chính.
 - Có thể vẽ sơ đồ nhanh chóng.
-- Ngay cả khi chưa học về TKQH, người đọc vẫn có thể hiểu được phần lớn nội dung.
+- Ngay cả khi chưa học về QHPS, người đọc vẫn có thể hiểu được phần lớn nội dung.
 
 ### B.3 Các ưu điểm chính
 
@@ -203,7 +203,7 @@ Cú pháp tuyến tính, không phụ thuộc vào bố cục không gian. Mắt
 
 **Hỗ trợ đầy đủ các cấu trúc điều khiển của quy trình thực tế**
 
-TKQH hỗ trợ bốn cấu trúc chính: tuần tự (viết liên tiếp các tác vụ), rẽ nhánh (dùng x.y ?), song song, và lặp (dùng -> để quay lui). Bốn cấu trúc này bao phủ hầu hết mọi tình huống thực tế.
+QHPS hỗ trợ bốn cấu trúc chính: tuần tự (viết liên tiếp các tác vụ), rẽ nhánh (dùng x.y ?), song song, và lặp (dùng -> để quay lui). Bốn cấu trúc này bao phủ hầu hết mọi tình huống thực tế.
 
 **Không yêu cầu công cụ chuyên dụng**
 
@@ -215,7 +215,7 @@ Quy trình xử lý đơn hàng điển hình (4 bước, 2 quyết định, 1 s
 
 **Cầu nối giữa tự nhiên và hình thức**
 
-TKQH không phải là ngôn ngữ lập trình khô khan, cũng không phải văn bản xuôi mơ hồ. Các ký hiệu được chọn trực quan. Nội dung tác vụ là văn bản thuần túy bằng ngôn ngữ tự nhiên (tiếng Việt có dấu, tiếng Anh,...), không bị ép buộc dùng từ vựng cố định.
+QHPS không phải là ngôn ngữ lập trình khô khan, cũng không phải văn bản xuôi mơ hồ. Các ký hiệu được chọn trực quan. Nội dung tác vụ là văn bản thuần túy bằng ngôn ngữ tự nhiên (tiếng Việt có dấu, tiếng Anh,...), không bị ép buộc dùng từ vựng cố định.
 
 ### B.4 Bảng lý do lựa chọn ký hiệu và ý nghĩa
 
@@ -237,11 +237,11 @@ TKQH không phải là ngôn ngữ lập trình khô khan, cũng không phải v
 
 ### B.5 Những vấn đề đã giải quyết
 
-TKQH giải quyết triệt để năm vấn đề kinh điển của việc viết quy trình.
+QHPS giải quyết triệt để năm vấn đề kinh điển của việc viết quy trình.
 
 **1. Mỗi người viết một kiểu, không ai đọc được của ai.**
 
-Giải pháp: TKQH áp đặt cú pháp thống nhất. Mọi tài liệu đúng cú pháp đều có cấu trúc giống nhau.
+Giải pháp: QHPS áp đặt cú pháp thống nhất. Mọi tài liệu đúng cú pháp đều có cấu trúc giống nhau.
 
 **2. Không biết bắt đầu từ đâu, viết thiếu hoặc viết thừa.**
 
@@ -261,11 +261,11 @@ Giải pháp: Dùng dấu `?` để báo hiệu rẽ nhánh. Các nhánh liệt 
 
 ### B.6 Kết quả đạt được khi áp dụng
 
-Qua thử nghiệm trên một số quy trình thực tế, TKQH cho thấy các kết quả sau.
+Qua thử nghiệm trên một số quy trình thực tế, QHPS cho thấy các kết quả sau.
 
 **Về tốc độ:**
 
-Thời gian viết một quy trình trung bình 10-15 bước giảm từ 15-20 phút (văn bản tự do) xuống còn 5-8 phút (TKQH). Thời gian chỉnh sửa quy trình khi có thay đổi giảm từ 10 phút xuống còn 3 phút.
+Thời gian viết một quy trình trung bình 10-15 bước giảm từ 15-20 phút (văn bản tự do) xuống còn 5-8 phút (QHPS). Thời gian chỉnh sửa quy trình khi có thay đổi giảm từ 10 phút xuống còn 3 phút.
 
 **Về chất lượng:**
 
@@ -275,4 +275,4 @@ Thời gian viết một quy trình trung bình 10-15 bước giảm từ 15-20 
 
 **Về khả năng kết xuất (vẽ):**
 
-Một quy trình TKQH với 15 bước có thể được vẽ thành sơ đồ chỉ trong 10-15 phút nếu vẽ bằng tay, hoặc dưới 5 giây nếu có công cụ tự động. 100% các quy trình viết đúng cú pháp đều có thể chuyển đổi thành sơ đồ mà không cần "sửa lỗi thủ công".
+Một quy trình QHPS với 15 bước có thể được vẽ thành sơ đồ chỉ trong 10-15 phút nếu vẽ bằng tay, hoặc dưới 5 giây nếu có công cụ tự động. 100% các quy trình viết đúng cú pháp đều có thể chuyển đổi thành sơ đồ mà không cần "sửa lỗi thủ công".
